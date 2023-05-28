@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portfólio</title>
+    <meta name="description" content="Meu portfólio de desenvolvimento web" />
+    <meta
+      name="Portifólio Diego Silvério Mathais"
+      content="desenvolvimento web, front-end, HTML, CSS"
+    />
     <!-- Font Awesome icons (free version)-->
     <script
       src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <!-- Cabeçalho -->
     <header>
-      <h1>Meu Portfólio</h1>
+      <h2>Diego Silvério Mathais Meu Portfólio </h2>
       <nav>
         <ul>
           <li><a href="#sobre">Sobre</a></li>
@@ -30,6 +34,11 @@
     <main>
       <!-- Sobre -->
       <section class="resume-section" id="sobre">
+        <img
+          src="img/profile.jpg"
+          alt="Foto de perfil"
+          class="profile-picture"
+        />
         <div class="resume-section-content">
           <h1>Diego <span>S. Mathais , 38 anos</span></h1>
           <div class="adress">
@@ -39,7 +48,7 @@
               rel="noopener noreferrer"
               >Rua Nino Cavagna, 280, Villa Cabana, 11990-000 Cananéia - SP</a
             >
-            · <a href="mailto:name@email.com">diego.mathais@gmail.com</a>
+            <a href="mailto:diego.mathais@gmail.com">diego.mathais@gmail.com</a>
           </div>
           <p class="sobre">
             Trabalhei no ramo do comércio durante mais de 20 anos. Nesse ramo já
@@ -58,13 +67,13 @@
             definitivamente minha carreira sólida.
           </p>
           <div class="social-icons">
-            <a class="social-icon" href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
+            <a class="social-icon" href="#"><i class="fab fa-linkedin"></i></a>
             <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
             <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="social-icon" href="#"><i class="fab fa-instagran-f"></i></a>
+            <a class="social-icon" href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </section>
@@ -100,9 +109,17 @@
         </ul>
       </section>
 
+      <!-- Botão de download do currículo -->
+
+      <section class="resume-button">
+        <a class="download-btn" href="caminho/para/seu/curriculo.pdf" download
+          ><i class="fas fa-download"></i>Download do Currículo</a
+        >
+      </section>
+
       <!-- Trabalho -->
       <section class="skill-work">
-        <h3>Trabalho Técnicas e Metodologias</h3>
+        <h3>Técnicas e Metodologias</h3>
         <ul class="skill-work-list">
           <li class="skill-work-list-item">
             <i class="fas fa-check"></i>
