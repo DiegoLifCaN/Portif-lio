@@ -1,53 +1,115 @@
 /* Estilos globais */
 * {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Esquema de cores */
+:root {
+  --cor-destaque: #03045e;
+  --cor-secundaria: #0077b6;
+  --cor-terciária: #00b4d8;
+  --cor-4: #90e0ef;
+  --cor-5: #caf0f8;
+  --cor-text1: #b5e2fa;
+  --cor-text2: #000000;
 }
 
 body {
+  overflow-x: hidden;
+  word-wrap: none;
+  overflow-wrap: none;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: #000000;
+}
+
+@media (max-width: 700px) {
+  body {
+    word-wrap: none;
+    overflow-wrap: none;
+    overflow-x: hidden;
+  }
 }
 
 /* Estilos para o cabeçalho Header */
+
 header {
-  background-color: #007bff;
-  color: #fff;
-  padding: 1vw;
-  height: fit-content;
-}
-
-h1 {
-  margin: 2vw;
-  font-size: 3vw;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 2vw;
-  padding: 2vw;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  background-color: var(--cor-destaque);
+}
+@media (max-width: 700px) {
 }
 
-nav ul li {
-  margin: 0 2vw;
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8vh;
+  min-height: 12vh;
+}
+@media (max-width: 700px) {
+  header nav {
+    display: flex;
+    display: inline-block;
+  }
 }
 
-nav ul li a {
-  color: #fff;
+header nav .title {
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 3, 5vh;
+  color: var(--cor-text1);
 }
+@media (max-width: 700px) {
+  header nav .title {
+    font-size: 3vh;
+  }
+}
+
+header nav a {
+  font-size: 3vh;
+  text-decoration: none;
+  color: var(--cor-text1);
+}
+@media (max-width: 700px) {
+  header nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 3vh;
+  }
+}
+
+/* Estilos para links de navegação futuros
+header nav a:hover {
+  text-decoration: underline;
+  transform: translateX(1);
+} */
 
 /* Estilos para o conteúdo principal */
-main {
-  padding: 2vw;
+main { g: 1vw;
 }
 
+/* Estilos para a seção de Sobre */
+section#sobre {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-text1);
+  padding: 1vw;
+  text-align: center;
+  font-size: 3vh;
+}
+@media (max-width: 700px) {
+  section.resume-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100%;
+  }
+}
 
 /* Estilos para a foto de perfil */
 .profile-picture {
@@ -58,25 +120,56 @@ main {
   float: left;
   margin-right: 2vw;
 }
-
-/* Estilos para a seção de Sobre */
-section#sobre {
-  background-color: #f5f5f5;
-  padding: 2vw;
-  text-align: center;
+@media (max-width: 700px) {
+  .profile-picture{
+position: relative;
+top: 0,5vh;
+left: 10vh;
+right: 10vh;
+  }
 }
 
 section#sobre h2 {
   font-size: 2vw;
   margin-bottom: 1vw;
 }
+@media (max-width: 700px) {
+  section#sobre h2 {
+    font-size: 5vh;
+  }
+}
+
+.adress{
+  font-size: 2vh;
+}
+@media (max-width: 700px){
+  .adress{
+    font-size: 2vh;
+  }
+}
+
+.mail{
+  font-size: 2,5vh;
+}
+@media (max-width: 700px){
+  .mail{
+    font-size: 2vh;
+  }
+}
 
 section#sobre p {
   font-size: 1.5vw;
   margin-bottom: 2vw;
 }
-
-
+@media (max-width: 700px){
+  section#sobre p{
+    width: 100vh;
+    background-color: #25d366;
+    font-size: 3vh;
+    height: fit-content;
+    width: fit-content;
+  }
+}
 
 /* Estilos para download de curriculo */
 .resume-button {
@@ -101,10 +194,10 @@ section#sobre p {
 }
 
 /* Estilos para a seção de Icones de Mídias Sociais */
-.social-icons{
+.social-icon {
+  color: var(--cor-text1);
   font-size: 2.5vw;
 }
-
 
 /* Estilos para a seção de Skills */
 section#skills {
