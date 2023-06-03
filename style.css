@@ -333,7 +333,44 @@ img {
   margin-bottom: 2vw;
 }
 
-/* Estilos para o formulário de contato */
+/* Estilos para o formulário de contato , https://formsubmit.co/form/submission */
+.container-form {
+  background-color: var(--cor-5);
+  display: grid;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  align-content: center;
+  justify-content: center;
+}
+
+
+.container-form span {
+  color: #25d366;
+}
+
+.container-form .form-group {
+}
+
+#form .form-group {
+}
+
+#form .form-row {
+}
+
+#form .text {
+}
+
+#form .form-control {
+  font-size: 4vh;
+}
+
+#form button {
+  margin-top: 1vh;
+  font-size: 5vh;
+  margin-left: 15vh;
+}
+
+/* Estilos para o formulário de contato 
 section#contato {
   background-color: #f5f5f5;
   padding: 2vw;
@@ -379,6 +416,7 @@ form button {
 form button:hover {
   background-color: #0069d9;
 }
+*/
 
 /* Estilos para o icone do whatsapp */
 .whatsapp-icon {
