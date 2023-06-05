@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <!-- Cabeçalho -->
@@ -226,18 +227,27 @@
                 </div>
                 <div class="col">
                   <input
-                    type="email"
-                    name="email"
+                    type="tel"
+                    name="phone"
                     class="form-control"
-                    placeholder="Seu E-mail"
+                    placeholder="Telefone"
                     required
                   />
                 </div>
               </div>
             </div>
             <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Seu E-mail"
+                required
+              />
+            </div>
+            <div class="form-group">
               <textarea
-                placeholder="Sua mensagem, deixe juntamente o numero de tel para contato."
+                placeholder="Sua mensagem, deixe também o número de telefone para contato."
                 class="form-control"
                 name="message"
                 rows="10"
@@ -298,7 +308,9 @@
       <p>&copy; 2023 Meu Portfólio</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+    <script>
+      <!-- Scripts -->
+      // <script src="">
+    </script>
   </body>
 </html>
