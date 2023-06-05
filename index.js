@@ -1,12 +1,14 @@
 $(document).ready(function () {
-  $("form").submit(function (event) {
+  $("#contact-form").submit(function (event) {
     event.preventDefault();
 
     $.ajax({
-      url: "https://formsubmit.co/ajax/your@email.com",
+      url: "https://formsubmit.co/ajax/diego.mathais@gmail",
       method: "POST",
       data: {
         name: $("#name").val(),
+        email: $("#email").val(),
+        phone: $("#phone").val(),
         message: $("#message").val(),
       },
       dataType: "json",
