@@ -1,0 +1,85 @@
+@media (max-width: 700px) {
+  body {
+    word-wrap: none;
+    overflow-wrap: none;
+    overflow-x: hidden;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  header nav .title {
+    font-size: 3vh;
+  }
+
+  header nav a {
+    align-items: end;
+    font-size: 3vh;
+  }
+
+  section#skills {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section#skills p {
+    font-size: 2vh;
+  }
+
+  .skills-list-item {
+    font-size: 3vh;
+  }
+
+  .skill-work-list {
+    font-size: 4vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  section#projetos h2 {
+    font-size: 5vh;
+  }
+
+  h3 {
+    font-size: 3vh;
+  }
+
+  p {
+    font-size: 2vh;
+  }
+
+  section.resume-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100%;
+  }
+
+  .profile-picture {
+    position: relative;
+    top: 0, 5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section#sobre h2 {
+    font-size: 5vh;
+  }
+
+  .adress {
+    font-size: 2vh;
+  }
+
+  .mail {
+    font-size: 2vh;
+  }
+
+  section#sobre p {
+    width: 100vh;
+    font-size: 3vh;
+    height: fit-content;
+    width: fit-content;
+  }
+}
